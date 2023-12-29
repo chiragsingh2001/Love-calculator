@@ -1,0 +1,82 @@
+body{
+    background-color: #0b1522;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    font-family: Arial ,sans-serif;
+}
+h2 {
+    color: aliceblue;
+}
+.bx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heart{
+    margin-top:20vh;
+    width: 70px;
+    height: 70px;
+    background: #f20044;
+    position: relative;
+    box-shadow: -10px 10px 90px #f20044;
+    transform: rotate(-45deg);
+    animation: heart 2s linear infinite;
+}
+@keyframes heart{
+    0%{
+        transform: rotate(-45deg) scale(0.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg) scale(1.5);
+    }
+}
+.heart::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: #f20044;
+    border-radius: 50px;
+    top: -50%;
+}
+.heart::after{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: #f20044;
+    border-radius: 50px;
+    right: -50%;
+}
+.inp{
+    margin-top: 30vh;
+    display: flex;
+    justify-content: space-around;
+}
+#bt{
+    background-color: #f20044;
+    color: aliceblue;
+    border-radius: 10px;
+    border: none;
+}
+input{
+    background-color: #f20044;
+    color: aliceblue;
+    border-radius: 10px;
+    border: none;
+}
+.out{
+    margin-top: 5%;
+    color: #f20044;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tex{
+    display: flex;
+    justify-content: space-around;
+}
